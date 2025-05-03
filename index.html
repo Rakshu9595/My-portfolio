@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe | Professional Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  
+
+
+ 
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="fw-bold">John<span class="text-primary">Doe</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 hero-text-column">
+          <div class="animate-top">
+            <span class="subtitle">Welcome to my portfolio</span>
+            <h1 class="fw-bold">Hi, I'm <span class="text-primary">John Doe</span></h1>
+            <div class="profession-wrapper">
+              <span class="profession-intro">I'm a</span>
+              <span class="profession" id="profession-text"></span>
+            </div>
+            <p class="lead mt-4">Specializing in creating beautiful, functional, and user-centered digital experiences.</p>
+            <div class="hero-buttons mt-5">
+              <a href="#contact" class="btn btn-primary me-3">Get In Touch</a>
+              <a href="assets/resume.pdf" class="btn btn-outline-primary" download>Download CV</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center hero-image-column">
+          <div class="animate-right">
+            <div class="hero-image">
+              <img src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="John Doe" class="img-fluid rounded-circle profile-img shadow-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <a href="#about"><i class="bi bi-mouse"></i> <span>Scroll Down</span></a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="section-heading animate-top">
+            <h2>About <span class="text-primary">Me</span></h2>
+            <div class="heading-line"></div>
+            <p class="lead">Here's a brief introduction about myself and my journey.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center mt-5">
+        <div class="col-lg-5 animate-left">
+          <div class="about-image">
+            <img src="https://images.pexels.com/photos/1181325/pexels-photo-1181325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="About John Doe" class="img-fluid rounded shadow-lg">
+          </div>
+        </div>
+        <div class="col-lg-7 animate-right">
+          <div class="about-content ps-lg-4 mt-4 mt-lg-0">
+            <h3>Professional <span class="text-primary">Summary</span></h3>
+            <p>I am a passionate professional with over 5 years of experience in web development and design. I specialize in creating user-friendly interfaces that drive business results.</p>
+            
+            <div class="row about-info mt-4">
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-person-fill"></i> <strong>Name:</strong> John Doe</li>
+                  <li><i class="bi bi-calendar-fill"></i> <strong>Experience:</strong> 5+ Years</li>
+                  <li><i class="bi bi-geo-alt-fill"></i> <strong>Location:</strong> New York, USA</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li><i class="bi bi-envelope-fill"></i> <strong>Email:</strong> john@example.com</li>
+                  <li><i class="bi bi-telephone-fill"></i> <strong>Phone:</strong> +1 (555) 123-4567</li>
+                  <li><i class="bi bi-linkedin"></i> <strong>LinkedIn:</strong> johndoe</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="mt-4">
+              <a href="#portfolio" class="btn btn-primary">View My Work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-padding bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="section-heading animate-top">
+            <h2>My <span class="text-primary">Skills</span></h2>
+            <div class="heading-line"></div>
+            <p class="lead">These are my core competencies that I've developed over the years.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-5">
+        <div class="col-lg-6 animate-left">
+          <div class="skill-group">
+            <h3>Technical Skills</h3>
+            
+            <div class="skill-item mt-4">
+              <div class="d-flex justify-content-between">
+                <h6>HTML/CSS</h6>
+                <span>95%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item mt-4">
+              <div class="d-flex justify-content-between">
+                <h6>JavaScript</h6>
+                <span>85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item mt-4">
+              <div class="d-flex justify-content-between">
+                <h6>React</h6>
+                <span>80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item mt-4">
+              <div class="d-flex justify-content-between">
+                <h6>Node.js</h6>
+                <span>75%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 animate-right">
+          <div class="skill-group">
+            <h3>Professional Skills</h3>
+            
+            <div class="skill-item mt-4">
+              <div class="d-flex justify-content-between">
+                <h6>UI/UX Design</h6>
+                <span>90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item mt-4">
+              <div class="d-flex justify-content-between">
+                <h6>Project Management</h6>
+                <span>85%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item mt-4">
+              <div class="d-flex justify-content-between">
+                <h6>Team Collaboration</h6>
+                <span>95%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+            
+            <div class="skill-item mt-4">
+              <div class="d-flex justify-content-between">
+                <h6>Problem Solving</h6>
+                <span>90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="section-heading animate-top">
+            <h2>My <span class="text-primary">Portfolio</span></h2>
+            <div class="heading-line"></div>
+            <p class="lead">Check out some of my latest projects and work samples.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-3">
+        <div class="col-12 text-center">
+          <div class="portfolio-filters animate-top">
+            <button class="btn btn-outline-primary active" data-filter="*">All</button>
+            <button class="btn btn-outline-primary" data-filter=".web">Web Design</button>
+            <button class="btn btn-outline-primary" data-filter=".app">App Development</button>
+            <button class="btn btn-outline-primary" data-filter=".ui">UI/UX Design</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-5 portfolio-container">
+        <div class="col-md-6 col-lg-4 mb-4 portfolio-item web animate-top">
+          <div class="card portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="E-commerce Website">
+              <div class="portfolio-overlay">
+                <a href="pages/project-details.html" class="btn btn-primary btn-sm"><i class="bi bi-link-45deg"></i> View Details</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">E-commerce Website</h5>
+              <p class="card-text">A modern e-commerce platform with advanced filtering and payment gateway integration.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4 portfolio-item app animate-top" data-delay="200">
+          <div class="card portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/6633920/pexels-photo-6633920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Fitness App">
+              <div class="portfolio-overlay">
+                <a href="pages/project-details.html" class="btn btn-primary btn-sm"><i class="bi bi-link-45deg"></i> View Details</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Fitness Tracking App</h5>
+              <p class="card-text">A cross-platform mobile app for tracking workouts and nutrition with data visualization.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4 portfolio-item ui animate-top" data-delay="400">
+          <div class="card portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Banking Dashboard">
+              <div class="portfolio-overlay">
+                <a href="pages/project-details.html" class="btn btn-primary btn-sm"><i class="bi bi-link-45deg"></i> View Details</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Banking Dashboard</h5>
+              <p class="card-text">A user-friendly dashboard for a financial institution with advanced data visualization.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4 portfolio-item web animate-top">
+          <div class="card portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/2374467/pexels-photo-2374467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Travel Blog">
+              <div class="portfolio-overlay">
+                <a href="pages/project-details.html" class="btn btn-primary btn-sm"><i class="bi bi-link-45deg"></i> View Details</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Travel Blog Platform</h5>
+              <p class="card-text">A content-rich travel blog with interactive maps and booking integrations.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4 portfolio-item app animate-top" data-delay="200">
+          <div class="card portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/2230796/pexels-photo-2230796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Educational App">
+              <div class="portfolio-overlay">
+                <a href="pages/project-details.html" class="btn btn-primary btn-sm"><i class="bi bi-link-45deg"></i> View Details</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Educational Platform</h5>
+              <p class="card-text">An interactive learning platform with course management and progress tracking.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4 portfolio-item ui animate-top" data-delay="400">
+          <div class="card portfolio-card">
+            <div class="portfolio-image">
+              <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Admin Dashboard">
+              <div class="portfolio-overlay">
+                <a href="pages/project-details.html" class="btn btn-primary btn-sm"><i class="bi bi-link-45deg"></i> View Details</a>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Admin Dashboard</h5>
+              <p class="card-text">A comprehensive admin dashboard with advanced analytics and user management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section-padding bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="section-heading animate-top">
+            <h2>Client <span class="text-primary">Testimonials</span></h2>
+            <div class="heading-line"></div>
+            <p class="lead">What people say about working with me.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-5">
+        <div class="col-12">
+          <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <div class="testimonial-item text-center animate-top">
+                      <div class="testimonial-image">
+                        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sarah Johnson" class="img-fluid rounded-circle">
+                      </div>
+                      <div class="testimonial-content mt-4">
+                        <p class="testimonial-text">"John's expertise in web development completely transformed our online presence. His attention to detail and commitment to delivering high-quality results exceeded our expectations."</p>
+                        <h5 class="testimonial-name mt-3">Sarah Johnson</h5>
+                        <p class="testimonial-position">Marketing Director, TechSolutions Inc.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <div class="testimonial-item text-center animate-top">
+                      <div class="testimonial-image">
+                        <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="David Miller" class="img-fluid rounded-circle">
+                      </div>
+                      <div class="testimonial-content mt-4">
+                        <p class="testimonial-text">"Working with John was a fantastic experience. He not only delivered an exceptional product but also provided valuable insights that helped improve our overall digital strategy."</p>
+                        <h5 class="testimonial-name mt-3">David Miller</h5>
+                        <p class="testimonial-position">CEO, Innovate Studios</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="row justify-content-center">
+                  <div class="col-lg-8">
+                    <div class="testimonial-item text-center animate-top">
+                      <div class="testimonial-image">
+                        <img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Jennifer Adams" class="img-fluid rounded-circle">
+                      </div>
+                      <div class="testimonial-content mt-4">
+                        <p class="testimonial-text">"John's ability to understand our requirements and translate them into an intuitive, user-friendly platform was impressive. His technical skills combined with his creative approach delivered outstanding results."</p>
+                        <h5 class="testimonial-name mt-3">Jennifer Adams</h5>
+                        <p class="testimonial-position">Product Manager, Global Solutions</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            
+            <div class="carousel-indicators testimonial-indicators">
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <div class="section-heading animate-top">
+            <h2>Get In <span class="text-primary">Touch</span></h2>
+            <div class="heading-line"></div>
+            <p class="lead">Have a project in mind? Let's work together!</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mt-5">
+        <div class="col-lg-5 animate-left">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p>Feel free to reach out using any of the following methods. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            
+            <div class="contact-item mt-4">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div class="contact-text">
+                <h5>Location</h5>
+                <p>123 Innovation Street, New York, NY 10001</p>
+              </div>
+            </div>
+            
+            <div class="contact-item mt-4">
+              <div class="contact-icon">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div class="contact-text">
+                <h5>Email</h5>
+                <p>john@example.com</p>
+              </div>
+            </div>
+            
+            <div class="contact-item mt-4">
+              <div class="contact-icon">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div class="contact-text">
+                <h5>Phone</h5>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="social-links mt-4">
+              <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-7 mt-5 mt-lg-0 animate-right">
+          <div class="contact-form-wrapper">
+            <form id="contactForm" class="contact-form">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    <label for="name">Your Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    <label for="email">Your Email</label>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mb-4">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                  <label for="subject">Subject</label>
+                </div>
+              </div>
+              
+              <div class="mb-4">
+                <div class="form-floating">
+                  <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                  <label for="message">Your Message</label>
+                </div>
+              </div>
+              
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <a href="#home" class="footer-logo">John<span class="text-primary">Doe</span></a>
+          <div class="footer-nav mt-4">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-social mt-4">
+            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+          </div>
+          <div class="copyright mt-4">
+            <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+
+
+  <script>
+    
+  </script>
