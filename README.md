@@ -1,8 +1,7 @@
 # Professional Portfolio Website
 
 A modern, responsive portfolio website template built with HTML, CSS, and Bootstrap. This template is designed to showcase professional skills and projects on LinkedIn and other professional networks.
-## Link
-rakshu15mp1.ccbp.tech
+
 ## Features
 
 - Fully responsive design that looks great on all devices
